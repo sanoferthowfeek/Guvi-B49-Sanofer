@@ -1,0 +1,35 @@
+1.Write a blog on Difference between HTTP1.1 vs HTTP2?
+
+HTTP/1.1 loads resources one after the other, so if one resource cannot be loaded, it blocks all the other resources behind it.
+HTTP/2 is able to use a single TCP connection to send multiple streams of data at once so that no one resource blocks any other resource.
+
+2.Write a blog about objects and its internal representation in Javascript?
+
+ objects in JavaScript may be defined as an unordered collection of related data, of primitive or reference types, in the form of “key: value” pairs.
+ In JavaScript, objects have an internal property known as Prototype . You can also see that there is a Scopes inside of these double brackets as well once clicking inside an object. Whenever there are [[]] that appear, it's an internal property that can't be accessed by our code.
+
+3.codekata practice-objects in javascript:
+ 
+  let car {
+  color = "green"
+  model = "honda"
+  year = 2022
+  }
+  console.log(car);
+
+4.Read about IP address, port, HTTP methods, MAC address:
+
+  IP address:
+     An IP address is a unique address that identifies a device on the internet or a local network. IP stands for "Internet Protocol," which is the set of rules governing the format of data sent via the internet or local network.
+
+  port:
+    A port in computer hardware is a jack or socket that peripheral hardware plugs into. A port in computer software is when a piece of software has been translated or converted to run on different hardware or operating system (OS) than it was originally designed for.
+
+ HTTP methods:
+    The Hypertext Transfer Protocol (HTTP) is designed to enable communications between clients and servers. HTTP works as a request-response protocol between a client and server. Example: A client (browser) sends an HTTP request to the server; then the server returns a response to the client.
+
+ MAC address:
+    A MAC address (media access control address) is a 12-digit hexadecimal number assigned to each device connected to the network. Primarily specified as a unique identifier during device manufacturing, the MAC address is often found on a device's network interface card (NIC).
+
+
+ 
