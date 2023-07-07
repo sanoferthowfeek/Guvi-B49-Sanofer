@@ -1,0 +1,285 @@
+a.Print odd numbers in an array
+
+//anonymous:
+
+const numbers = [1,2,3,4,5,6,7,8,9,10];
+const odd = numbers.filter((num) => num % 2 === 1);
+console.log(odd); 
+
+// Output : 1,3,5,7,9
+
+//IIFE:
+
+let a=[1,2,3,4,5,6,7,8,9,10];
+
+(function ()  {
+
+  let odd= a.filter(num => num %2 ==1);
+return prime;
+
+})();
+
+  // Output : 1,3,5,7,9
+
+
+
+  b.Convert all the strings to title caps in a string array:
+
+  //anonymous:
+
+  let str = function ()
+   {
+  let arr = "are you going to school"
+  let titlecase = arr.toLowerCase().replace(/\b(\w)/g, s => s.toUpperCase());
+  console.log(titlecase)
+}
+str()
+
+
+//output : Are You Going To School
+
+
+//IIFE:
+
+(function (str) {
+str = str.toLowerCase().split(' ');
+for (var i = 0; i < str.length; i++){
+  str[i] = str[i].charAt(0).toUpperCase() + str[i].slice(1);
+}
+console.log(str.join(' '));
+})("are you going to school")
+
+//output : Are You Going To School
+
+
+c.Sum of all numbers in an array:
+
+//anonymous:
+
+let func = function () {
+    
+  let addition = [1, 2, 3, 4, 5,6,7,8,9,10,11,12,13]
+  let sum = addition.reduce(function(a, b){
+      return a + b;
+  });
+  console.log(sum);
+}
+func()
+
+
+//output : 91
+
+
+//IIFE:
+
+(function () {
+  let addition = [1, 2, 3, 4].reduce(add, 5);
+  function add(accumulator, a) {
+    return accumulator + a;
+  }
+  console.log(addition);
+})()
+
+
+//output : 15
+
+
+d.Return all the prime numbers in an array:
+
+
+//anonymous:
+
+let prime = function (arr) {
+  return arr.filter(function(n){
+    for (let i = 2; i < n; i++) {
+      if (n % i === 0) return false;
+    }
+    return n > 1;
+  });
+};
+console.log(prime([17,52,3,5,9,11,16]));
+
+//output: 17, 3, 5, 11, 3
+
+//IIFE:
+
+
+(function (){
+var primeNum = [17,52,3,5,9,11,16, 9]
+
+primeNum = primeNum.filter(function(number) {
+  for (var i = 2; i <= Math.sqrt(number); i++) {
+    if (number % i === 0) return false;
+  }
+  return true;
+});
+
+console.log(primeNum);
+})()
+
+
+//output: 17, 3, 5, 11, 3
+
+e.Return all the palindromes in an array:
+
+//anonymous:
+
+let isPalindrome = function () {
+  var myArray = ['rotator', 'monday', 'honda', 'noon','wow','laptop'];
+  var arr = myArray.filter(function (c, d) {
+    var palindrome = c.split('').reverse().join('');
+    if (c == palindrome) {
+      console.log(myArray[d]);
+    }
+  });
+}
+isPalindrome()
+
+//output: rotator,wow,noon
+
+
+//IIFE:
+
+( function () {
+  var myArray = ['rotator', 'monday', 'honda', 'noon','wow','laptop'];
+  var arr = myArray.filter(function (c, d) {
+    var palindrome = c.split('').reverse().join('');
+    if (c == palindrome) {
+      console.log(myArray[d]);
+    }
+  });
+})()
+
+//output: rotator,wow,noon
+
+
+f.Return median of two sorted arrays of the same size:
+
+//anonymous:
+
+let median = function(a, b) {
+
+  let c = [...a, ...b].sort((a, b) => a - b);
+
+  const half = c.length / 2 | 0;
+  
+if (c.length % 2) {
+  return c[half];
+} else {
+  
+  return (c[half] + c[half - 1]) / 2;
+}
+}
+let arr1 = [4,15,21,46,77];
+let arr2 = [7,8,33,44,68];
+console.log(median(arr1, arr2));
+
+//output: 27
+
+//IIFE:
+
+
+( function() {
+let arr1 = [4,15,21,46,77];
+let arr2 = [7,8,33,44,68];
+
+  let c = [...arr1, ...arr2].sort((arr1, arr2) => arr1 - arr2);
+
+  const half = c.length / 2 | 0;
+  
+if (c.length % 2) {
+console.log(c[half]);
+} else {
+  
+console.log((c[half] + c[half - 1]) / 2);
+}
+
+})()
+
+
+//output: 27
+
+
+g.Remove duplicates from an array:
+
+
+//anonymous:
+
+let findDuplicates = function () {
+  
+  const yourArray = [1, 2, 2, 3, 4,6,8,9,11,11,15]
+  let duplicates = []
+  const dupArray = [...yourArray].sort() 
+  for (let i = 0; i < dupArray.length; i++) {
+    if (dupArray[i + 1] === dupArray[i]) {
+      duplicates.push(dupArray[i])
+    }
+  }
+  console.log(duplicates) 
+}
+findDuplicates()
+
+//output: 2,11
+
+
+//IIFE:
+
+
+(function () {
+  
+  let numbers = [1, 2, 2, 3, 4,6,8,9,11,11,15];
+  
+  let duplicates = numbers.filter((item, index) => index !== numbers.indexOf(item));
+  
+  console.log(duplicates);
+})()
+
+//output: 2,11
+
+h.Rotate an array by k times:
+
+//anonymous:
+
+let rotateArray =function(A, K) {
+  if (A.length === K || K === 0) {
+      return A;
+  }
+  K = K % A.length;
+  for (let i = 0; i < K; i++) {
+      A.unshift(A.pop());
+  }
+console.log(A)
+}
+rotateArray([8,9,10,11,12],2)
+
+
+//output: 11,12,8,9,10
+
+//IIFE:
+
+(function(A, K) {
+  if (A.length === K || K === 0) {
+      return A;
+  }
+  K = K % A.length;
+  for (let i = 0; i < K; i++) {
+      A.unshift(A.pop());
+  }
+console.log(A)
+})([8,9,10,11,12],2)
+
+//output: 11,12,8,9,10
+
+
+
+
+
+
+
+
+
+
+
+
+
+
