@@ -1,0 +1,9 @@
+What is the difference between screen and document?
+
+		1.Screen is a small information object about physical screen dimensions,window.
+		2.Document is the main object of the potentially visible document object model/DOM.
+
+what is the difference between document and window?
+        1.The window is at a root/top level at the JavaScript object hierarchy.
+        2.It is a global/root object in JavaScript and it is the root object of the Document object model(DOM).
+        3.A document is an object inside the window object and we use a document object for manipulation inside the document.
