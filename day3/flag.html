@@ -1,0 +1,30 @@
+<html>
+  <head>
+    <title>XMLHttpRequest Example</title>
+  </head>
+  <body>
+    <script>
+      var xhr = new XMLHttpRequest();
+
+      var method = "GET";
+      var url = "https://restcountries.com/v3.1/all";
+
+      xhr.open(method, url);
+
+      xhr.onload = function () {
+        if (xhr.status === 200) {
+          var response = JSON.parse(xhr.responseText);
+          console.log(response.length);
+          for (var i = 0; i < response.length; i++) {
+              console.log(response[i].flag);
+                }
+              
+        } else {
+          console.log("Request failed", xhr.status);
+        }
+      };
+
+      xhr.send();
+    </script>
+  </body>
+</html>
