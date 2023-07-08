@@ -1,0 +1,28 @@
+c.Print the following details name, capital, flag using forEach function:
+
+
+<html>
+    <head>
+      <title>XMLHttpRequest Example</title>
+    </head>
+    <body>
+      <script>
+        var xhr = new XMLHttpRequest();
+        var method = "GET";
+        var url = "https://restcountries.com/v3.1/all";
+        xhr.open(method, url);
+        xhr.onload = function () {
+          if (xhr.status === 200) {
+            var countryData=JSON.parse(this.response);
+    countryData.forEach((element)=>{
+        console.log(element.name,element.capital,element.flag);
+    })
+          } else {
+            console.log("Request failed", xhr.status);
+          }
+        };
+        xhr.send();
+      </script>
+    </body>
+  </html>
+  

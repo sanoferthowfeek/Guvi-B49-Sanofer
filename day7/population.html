@@ -1,0 +1,29 @@
+b.Get all the countries with a population of less than 2 lakhs using Filter function:
+
+
+<html>
+    <head>
+      <title>XMLHttpRequest Example</title>
+    </head>
+    <body>
+      <script>
+        var xhr = new XMLHttpRequest();
+        var method = "GET";
+        var url = "https://restcountries.com/v3.1/all";
+        xhr.open(method, url);
+        xhr.onload = function () {
+          if (xhr.status === 200) {
+            var countryData=JSON.parse(this.response);
+    const popu=countryData.filter((element)=>{
+        return element.population<200000;
+    })
+    console.log(popu);
+          } else {
+            console.log("Request failed", xhr.status);
+          }
+        };
+        xhr.send();
+      </script>
+    </body>
+  </html>
+  
