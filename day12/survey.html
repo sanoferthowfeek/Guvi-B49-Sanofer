@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vaccination</title>
+    <style>
+ 
+        
+        body {
+            background-color: burlywood;
+            font-family: Verdana;
+            text-align: center;
+        }
+ 
+        form {
+            background-color: whitesmoke;
+            max-width: 500px;
+            margin: 50px auto;
+            padding: 30px 20px;
+            box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+        }
+ 
+        .form-vaccine {
+            text-align: left;
+            margin-bottom: 25px;
+        }
+ 
+        .form-vaccine label {
+            display: block;
+            margin-bottom: 10px;
+        }
+ 
+        .form-vaccine input,
+        .form-vaccine select,
+        .form-vaccine textarea {
+            border: 1px solid rgb(196, 196, 14);
+            border-radius: 2px;
+            font-family: inherit;
+            padding: 10px;
+            display: block;
+            width: 95%;
+        }
+ 
+        
+        .form-vaccine input[type="radio"],
+        .form-vaccine input[type="checkbox"] {
+            display: inline-block;
+            width: auto;
+        }
+ 
+        button {
+            background-color: goldenrod;
+            border: 1px solid lightgoldenrodyellow;
+            border-radius: 2px;
+            font-family: inherit;
+            font-size: 21px;
+            display: block;
+            width: 100%;
+            margin-top: 50px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Vaccination Survey Form</h1>
+    <form id="form">
+ 
+        <div class="form-vaccine">
+            <label for="name" id="label-name">
+                Name
+            </label>
+ 
+            <input type="text"
+                   id="name"
+                   placeholder="Enter your name" />
+                </div>
+                   <div class="form-vaccine">
+                    <label for="email" id="label-email">
+                        Email
+                    </label>
+         
+                    
+                    <input type="email"
+                           id="email"
+                           placeholder="Enter your email" />
+            </div>
+       
+        <div class="form-vaccine">
+            <label for="age" id="label-age">
+                Age
+            </label>
+ 
+            
+            <input type="text"
+                   id="age"
+                   placeholder="Enter your age" />
+        </div>
+        <div class="form-vaccine">
+            <label for="role" id="label-role">
+                What is your current status?
+            </label>
+             
+           
+            <select name="role" id="role">
+                <option value="student">Student</option>
+                <option value="intern">Employed</option>
+                <option value="professional">
+                    Unemployed
+                </option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+        <div class="form-vaccine">
+            <label>
+                Are you planning to get the COVID-19 vaccine?
+
+            </label>
+ 
+
+            <label for="recommed-1">
+                <input type="radio"
+                       id="recommed-1"
+                       name="recommed">Yes</input>
+            </label>
+            <label for="recommed-2">
+                <input type="radio"
+                       id="recommed-2"
+                       name="recommed">No</input>
+            </label>
+            <label for="recommed-3">
+                <input type="radio"
+                       id="recommed-3"
+                       name="recommed">Not sure yet</input>
+            </label>
+        </div>
+        <div class="form-vaccine">
+			<label>Which of the followings define your concerns about getting the vaccine?
+			</label>
+			
+			<label for="inp-1">
+				<input type="checkbox"
+					name="inp">I have concern's about the vaccine's side effects,long term safety</input></label>
+			<label for="inp-2">
+				<input type="checkbox"
+					name="inp">I do not believe it will be a solution for virus diseases</input></label>
+			<label for="inp-3">
+				<input type="checkbox"
+					name="inp">I believe that it will have negative effects on my health</input></label>
+			<label for="inp-4">
+				<input type="checkbox"
+					name="inp">Others</input></label>   
+		</div>
+        <div class="form-vaccine">
+			<label for="comment">
+				Please explain your reasons
+			</label>
+			<textarea name="comment" id="comment"
+				placeholder="Type here">
+			</textarea>
+		</div>
+		<button type="submit" value="submit">
+			Submit
+		</button>
+	</form>
+</body>
+</html>
