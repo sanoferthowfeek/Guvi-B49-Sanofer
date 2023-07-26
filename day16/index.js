@@ -2,10 +2,10 @@
 console.log("Countdown Begins");
 
 setTimeout (function () {
-  console.log ("Count 10"); 
+console.log ("Count 10"); 
 
   setTimeout (function () {
-    console.log ("Count 9"); 
+    console.log  ("Count 9"); 
 
     setTimeout (function () {
         console.log ("Count 8"); 
