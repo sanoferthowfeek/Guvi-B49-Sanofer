@@ -1,0 +1,16 @@
+.country{
+    text-align: center;
+}
+.card-header{
+    text-align: center;
+   background-color: rgb(1, 1, 10);
+   color: #ece7e7;
+}
+.card-text{
+    text-align: center;
+    color: #ece7e7;
+}
+.card-body{
+    background: linear-gradient(grey,gold,lightpink,darkgrey,lightpink);
+}
+
