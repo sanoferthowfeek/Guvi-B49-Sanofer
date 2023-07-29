@@ -8,9 +8,32 @@
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     />
+    <link rel ="stylesheet" type="text/css" href="index.css"/>
   </head>
   <body>
-    <h1>Promise Tasks</h1>
+    <div>
+      <h1>Welcome to Weather API testing</h1>
+    </div>
+    <div>
+        <div>
+          <label><p>City :</p></label>
+          <input type="text" id="city" placeholder="Enter City name">
+          <p class='note' style="color: red">Note : First letter should be in uppercase</p>
+        </div>
+        <div>
+          <label><p>Country: </p></label>
+          <input type="text" id="country" placeholder="Enter Country name">
+          <p class='note' style="color: red">Note : First letter should be in uppercase</p>
+        </div>
+        <div>
+          <label><p>Weather :</p></label>
+          <h3 id="weather"></h3>
+        </div>
+        <div>
+          <br>
+          <button onclick="search()">Search</button>
+        </div>
+    </div>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="script.js"></script>
