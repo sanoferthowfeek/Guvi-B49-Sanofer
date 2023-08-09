@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel ="stylesheet" type="text/css" href="style.css"/>
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+            <form>
+                <div class="txt">
+                    <input type="text" name="txt"/>
+                </div>
+                <div>
+                    <input class="operator" type="button" value="AC" onclick="txt.value = '' "/>
+                    <input class="operator" type="button" value="DEL" onclick="txt.value = txt.value.toString().slice(0,-1) "/>
+                    <input class="operator" type="button" value="." onclick="txt.value += '.' "/>
+                    <input class="operator" type="button" value="/" onclick="txt.value += '/' "/>
+                </div>
+                <div>
+                    <input type="button" value="7" onclick="txt.value += '7' "/>
+                    <input type="button" value="8" onclick="txt.value += '8' "/>
+                    <input type="button" value="9" onclick="txt.value += '9' "/>
+                    <input class="operator" type="button" value="*" onclick="txt.value += '*' "/>
+                </div>
+                <div>
+                    <input type="button" value="4" onclick="txt.value += '4' "/>
+                    <input type="button" value="5" onclick="txt.value += '5' "/>
+                    <input type="button" value="6" onclick="txt.value += '6' "/>
+                    <input class="operator" type="button" value="-" onclick="txt.value += '-' "/>
+                </div>
+                <div>
+                    <input type="button" value="1" onclick="txt.value += '1' "/>
+                    <input type="button" value="2" onclick="txt.value += '2' "/>
+                    <input type="button" value="3" onclick="txt.value += '3' "/>
+                    <input class="operator" type="button" value="+" onclick="txt.value += '+' "/>
+                </div>
+                <div>
+                    <input class="zero" type="button" value="0" onclick="txt.value += '0' "/>
+                    <input  class="equal" type="button" value="=" onclick="txt.value = eval(txt.value) "/>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
