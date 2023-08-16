@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bootstrap</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+</head>
+<body>
+    <h1>BOOTSTRAP</h1>
+    <!-- Display a basic bootstrap page ,with 6 equal columns of below mentioned content using the container bootstrap class 1.Column1 2. Column2 3. Column3 4.Column4 5.Column5 6. Column6 and also change the background color of each column to light-blue, yellow, lavender, pink, palevoiletred, snow Hint(Device breakpoint must be of lg)-->
+    <div class="container1">
+        <div class="row">
+            <div class="col-lg-6" style="background:#add8e6;">Column1</div>
+            <div class="col-lg-6 "  style="background:yellow;">Column2</div>
+            <div class="col-lg-6 "  style="background:lavender;">Column3</div>
+            <div class="col-lg-6 "  style="background:pink;">Column4</div>
+            <div class="col-lg-6 "  style="background:#DB7093;">Column5</div>
+            <div class="col-lg-6"  style="background:snow;">Column6</div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <!-- /*change the background color of each column to dodger blue using the external css selector(.container class) in the bootstrap container*/ -->
+    <div class="container2">
+        <div class="row">
+          <div class="col-sm-3">Column1</div>
+          <div class="col-sm-3">Column2</div>
+          <div class="col-sm-3">Column3</div>
+        </div>
+      </div>
+      <br>
+      <br>
+      <br>
+      <!-- /*Display Below bootstrap items by changing the given items content text into lowercase, uppercase, and as well as capitalized*/ -->
+      <div class="container3">
+        <p class="text-lowercase">Guvi</p>
+        <p class="text-uppercase">Guvi</p>      
+        <p class="text-capitalize">guvi</p>
+    </div>
+    <br>
+    <br>
+    <br>
+    <!-- /*Create a table which consist of heading consisting of first name ,middle name and last name with strips by using a table-striped class a single row should consist of firstname :john lastname :Doe Email:john@guvi.in*/ -->
+    <div class="container4">
+        <table class="table  table-striped">
+            <thead>
+                <tr>
+                    <td>FirstName</td>
+                    <td>LastName</td>
+                    <td>Email</td>
+                </tr>
+            </thead>
+            </table>
+    </div>
+    <br>
+    <br>
+    <br>
+    <!-- /*Create a table which consist of heading consisting of first name ,middle name and last name with borders by using a table-border class in bootstrap .A single row should consist of firstname :john lastname :Doe Email:john@guvi.in*/ -->
+    <div class="container5">
+        <table class="table  table-bordered">
+            <thead>
+                <tr>
+                    <td>FirstName</td>
+                    <td>LastName</td>
+                    <td>Email</td>
+                </tr>
+            </thead>
+            </table>  
+            </div>
+            <br>
+            <br>
+            <br>
+            <!-- /*Display a block level button using the contextual colors primary as well as using the block level buttons. Content of the button must be Button 1*/ -->
+            <div class="container6">
+                <button type="button" class="btn 
+               btn-primary btn-lg btn-block">
+             Button 1
+           </button>
+                       
+                   </div>
+                   <br>
+                   <br>
+                   <br>
+
+                   <!-- /*Create a button group of 3 using the btn-group class, and Display the content of the buttons as Apple,Samsung,Sony . Display each button individually with the contextual colors such as primary,success and danger*/ -->
+                   <div class="container7">
+                    <div class="btn-group">
+           <button type="button" class="btn btn-primary">Apple</button>
+           <button type="button" class="btn btn-success">Samsung</button>
+           <button type="button" class="btn btn-danger">Sony</button>
+         </div>
+                 </div>
+                 <br>
+                 <br>
+                 <br>
+                 <!-- /*Display a progress-bar in a layout with a width of 50% using the bootstrap class progress-bar*/ -->
+                 <div class="container8">
+                    <div class="progress">
+           <div class="progress-bar" role="progressbar" style="width:50%" ></div>
+         </div>
+                 </div>
+                 <br>
+                 <br>
+                 <br>
+                 <!-- /*Display a list of items such as Home and Education using a list-group class and group the item based on list-group-tem class*/ -->
+                 <div class="container9">
+                    <ul class="list-group">
+          <li class="list-group-item">Home</li>
+          <li class="list-group-item">Education</li>
+        </ul>
+                </div>
+                <br>
+                <br>
+                <br>
+                <!-- /*Display a basic bootstrap page ,with 2 unequal columns ratio (7:4) of below mentioned content using the container bootstrap class A.Column1 B.Column2 and also change the background color of each column to light-blue, yellow, Hint(Device breakpoint must be of md).Change the font size of each column to 45px*/ -->
+                <div class="container10">
+
+
+                    <div class="row">
+                        <div class="col-md-7" style="background:lightblue;">Column1</div>
+                        <div class="col-md-4 "  style="background:yellow;">Column2</div>
+                        
+                        </div>
+            
+            </div>
+            <br>
+            <br>
+            <br>
+            <!-- /*Change the text color of the container items to text-success and text-warning using bootstrap contextual colors and change the font size to 30px.*/ -->
+            <div class="container11">   
+                <p class="text-success">Muted</p>
+                <p class="text-warning">Primary</p>
+            
+            </div>  
+            <br>
+            <br>
+            <br> 
+            <!-- /*Display a pagination of 5 using a bootstrap pagination class with help of the unordered list as well as a tag*/ -->
+            <div class="container12">
+                <ul class="pagination">
+           
+           <li class="page-item"><a class="page-link" href="#">5</a></li>
+           
+          
+         </ul>
+       
+               </div>
+               <br>
+               <br>
+               <br>
+               <!-- /*Display a basic bootstrap page ,with 3 unequal columns ratio (4:4:1) of below mentioned content using the container bootstrap class Column1 Column2 Column3 and also change the background color of each column to yellow, orange and green, Hint(Device breakpoint must be of sm)*/ -->
+               <div class="container13">
+  
+
+                <div class="row1">
+                    <div class="col-sm-4" style="background:yellow;">Column1</div>
+                    <div class="col-sm-4 "  style="background:orange;">Column2</div>
+                    <div class="col-sm-1 "  style="background:green;">Column3</div>
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <!-- /*display the paragraph content inside container using the bootstrap jumbotron classes.*/ -->
+            <div class="container14">
+                <div class="jumbotron">
+    
+                <div>   
+                    <p>Bootstrap is the most popular HTML, CSS, and JS framework for developing responsive, mobile-first projects on the web.</p>
+                </div>
+            </div>
+            </div>
+            <br>
+            <br>
+            <br>
+
+            <!-- /*Display a page with a dropdown menu , with the help of button using the primary contextual color class. Add the data-toggle value as dropdown .Content of the button must be Courses*/ -->
+            <div class="container15">
+                <div class="dropdown">
+                 <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Dropdown Example
+              <span class="caret"></span></button>             
+            <ul class="dropdown-menu">
+            <li><a href="#">HTML</a></li>
+            <li><a href="#">CSS</a></li>
+            <li><a href="#">Bootstrap</a></li>
+            </ul>
+            </div>
+            </div>
+            <br>
+            <br>
+            <br>
+            <!-- /*Create a table which consist of heading consisting of first name ,middle name and last name with table-hover as well as the table border effect by using a in bootstrap class .A single row should consist of firstname :john lastname :Doe Email:john@guvi.in.*/ -->
+            <div class="container16">
+                <table class="table table-hover table-bordered">
+                       <thead>
+                           <tr>
+                               <td>FirstName</td>
+                               <td>LastName</td>
+                               <td>Email</td>
+                           </tr>
+                       </thead>
+                </table>
+               </div>   
+               <br>
+               <br>
+               <br>
+
+               <!-- /*Display a Bootstrap page with previous and next buttons using the pager class*/ -->
+               <div class="container17">
+                <ul class="pager">
+               <li><a href="#">Previous</a></li>
+               <li><a href="#">Next</a></li>
+             </ul>
+             </div>
+             <br>
+             <br>
+             <br>
+  
+    <script src="script.js"></script>
+</body>
+</html>
