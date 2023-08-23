@@ -1,0 +1,59 @@
+
+.shop{
+  background-color: rgb(208, 91, 161);
+  top: 0;
+  display:flex;
+  width: auto;
+  justify-content: center;
+  text-decoration-color: white;
+  
+}
+.foot{
+  background-color: rgba(179, 41, 158, 0.441);
+  color:rgb(244, 243, 241);
+}
+img {
+  border-radius: 5px 5px 0 0;
+  width:100%
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border-radius: 5px; 
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+
+.container {
+  padding: 2px 16px;
+}
+.fas fa-cart-plus{
+  color: black;
+}
+.cart-items{
+  background-color: rgb(172, 172, 227);
+  color: black;
+  justify-content: center;
+  width:auto;
+  padding:2px 16px;
+  margin: 0%;
+}
+.cart-items button {
+  background-color: #453e9c; 
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 15px;
+}
+
+
+
+
+
