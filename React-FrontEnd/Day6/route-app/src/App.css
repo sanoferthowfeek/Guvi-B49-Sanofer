@@ -1,0 +1,63 @@
+
+.topnav {
+  background-color: #130d12;
+  overflow: hidden;
+}
+
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+footer {
+  text-align: center;
+  padding: 3px;
+  background-color: rgb(100, 37, 98);
+  color: white;
+}
+.header {
+  padding: 5px;
+  text-align: center;
+  background-image:linear-gradient(to right,violet, pink,lavender,skyblue,lightgreen,lightyellow,violet, pink,lavender,skyblue,lightgreen,lightyellow) ;
+  color: white;
+  font-size: 30px;
+}
+.all{
+  background: lightblue;
+}
+.cards{
+  display:flex;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border-radius: 5px;
+}
+
+.cards:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+
+.details {
+  padding: 2px 16px;
+}
+img {
+  border-radius: 5px 5px 0 0;
+  padding: 5px;
+  
+}
+image_box{
+  width:100%;
+  border-radius: 5px 5px 0 0;
+}
+.app{
+  background: lightblue;
+}
