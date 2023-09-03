@@ -116,7 +116,8 @@ if(bmd.status == "available" ){
 <div className="card col-12 ">
   <div className="card-body">
 <h3 className="card-title" > Title : {bmd.name}</h3>
-<h5 className="card-text" > Author : {bmd.author}</h5>
+<h4 className="card-text" > Author : {bmd.author}</h4>
+<h5 className="card-text" > ISBN Number : {bmd.pages}</h5>
 <h6 className="text-muted" > publisher : {bmd.publisher}</h6>
 <h6 className="text-muted mb-4" > Published : {bmd.published}</h6>
 
