@@ -5,9 +5,10 @@ const mongoose = require("mongoose");
 
 const app = express();
 const PORT = 3000;
-
-
-const DB_URL = 'mongodb+srv://sanofer:Thowfeek1234@cluster0.htinaip.mongodb.net/?retryWrites=true&w=majority';
+app.use(bodyParser.json());
+// const DB_URL = "mongodb://localhost:27017/admin";
+// const DB_URL = "mongodb://0.0.0.0:27017/admin";
+const DB_URL = 'mongodb+srv://sanofer:guvi1234@cluster0.htinaip.mongodb.net/?retryWrites=true&w=majori';
 mongoose
   .connect(DB_URL, {})
   .then(() => console.log("Connected to MongoDB"))
