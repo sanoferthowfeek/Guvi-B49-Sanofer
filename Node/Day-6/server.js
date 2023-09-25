@@ -9,8 +9,8 @@ const app = express();
 const PORT = 3000;
 app.use(bodyParser.json());
 
-const DB_URL = "mongodb://0.0.0.0:27017/admin";
-
+// const DB_URL = "mongodb://0.0.0.0:27017/admin";
+const DB_URL = 'mongodb+srv://sanofer:guvi1234@cluster0.htinaip.mongodb.net/?retryWrites=true&w=majori';
 
 mongoose
   .connect(DB_URL, {})
