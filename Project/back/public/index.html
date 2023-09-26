@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body class="container text-light">
+    <div class="container-fluid">
+        <!-- Login form begin -->
+        <div class="row mx-auto w-sm-50 w-50" id="loginDiv">
+            <div class="box">
+                <form onsubmit="login();return false;" id="loginForm" method="POST">
+                    <h1>Login</h1>
+                    <p class="text-muted"> Please enter your login and password!</p>
+                    <input type="text" id="loginName" name="username" placeholder="Username" autocomplete="off" required>
+                    <input type="password" name="password" id="loginPassword" placeholder="Password" autocomplete="off" required>
+                    <input type="submit" name="submit" id="loginSubmit" value="Login">
+                    <div class="mb-2">
+                        <a class="forgot text-muted" onclick="forgotpwd()" href="#">Forgot password?</a>
+                    </div>
+                    <div>
+                        <!-- <input type="button" name="signup" id="signup" value="SignUp" href="#"> -->
+                        <label>Don't have an account ? <a href="#"  onclick="signup()">Sign Up</a> </label>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!-- Login Form End -->
+        <!-- Register form begin -->
+        <div class="row mx-auto w-sm-50 w-50" id="registerDiv">
+            <div class="box" id="register">
+                <form onsubmit="register();return false;" id="signupForm" method="POST">
+                    <fieldset>
+                        <legend>
+                            <h2>SIGN UP</h2>
+                        </legend>
+                        <div class="form-group input-group">
+                            <i class="fa fa-user p-md-3"></i><input type="text" name="name" id="name" class="col-10" placeholder="username" autocomplete="off" required>
+                        </div>
+                        <div class="form-group input-group">
+                            <i class="fa fa-envelope p-md-3"></i><input type="email" name="email" autocomplete="off" id="email" class="col-10" placeholder="E-mail" required>
+                        </div>
+                        <div class="form-group input-group">
+                            <i class="fa fa-phone p-md-3"></i><input type="tel" name="phone" id="phone" autocomplete="off" class="col-10" placeholder="Phone Number" required>
+                        </div>
+                        <div class="form-group input-group">
+                            <i class="fa fa-lock p-md-3"></i> <input type="password" name="password" id="password" autocomplete="off" class="col-10" placeholder="password" required>
+                        </div>
+                        <div>
+                            <input type="submit" value="Sign Up" class="btn btn-success">
+                        </div>
+                        <label><a href="index.html">Back to Login</a> </label>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+        <!-- Register form end -->
+        <!-- Forgot Password Begins -->
+        <div class="row mx-auto w-sm-50 w-50" id="resetDiv">
+            <div class="box" id="resetpassword">
+                <form onsubmit="resetpassword();return false;" id="resetpasswordForm" method="POST">
+                    <fieldset>
+                        <legend>
+                            <h2>Reset Password</h2>
+                        </legend>
+                        <div class="form-group" id="divemail">
+                            <!-- <label for="confirmemail">Email</label> -->
+                            <input type="email" name="confirmemail" autocomplete="off" id="confirmemail" placeholder="Email" class="col-10" required>
+                            <small class="text-muted">If registered, a confirmation email will be sent for resetting the password</small>
+                        </div>
+                        <div class="form-group" id="codediv">
+                            <label for="key">Enter the Code</label>
+                            <input type="text" name="key" id="key" autocomplete="off" placeholder="Code" class="form-control col-4">
+                        </div>
+                        <div id="newpassworddiv">
+                            <div class="form-group">
+                                <input type="email" name="newpwdemail" id="newpwdemail" autocomplete="off" placeholder="Confirm E-mail" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <input type="password" name="newpassword" id="newpassword" placeholder="New Password" class="form-control">
+                            </div>
+                        </div>
+
+                        <div>
+                            <div id="sendmail">
+                                <input type="submit" value="Send Email" class="btn btn-info">
+                            </div>
+                            <div id="submitcode">
+                                <input type="button" value="Submit code" class="btn btn-info" id="code" onclick="codecheck()">
+                            </div>
+                            <div id="setnewpassword">
+                                <input type="button" value="Reset Password" class="btn btn-info" id="reset" onclick="changepassword()">
+                            </div>
+                        </div>
+                        <label><a href="index.html">Back to Login</a> </label>
+                    </fieldset>
+                </form>
+
+            </div>
+        </div>
+        <!-- Forgor Password ends -->
+    </div>
+    <script src="login.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
