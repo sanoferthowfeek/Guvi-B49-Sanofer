@@ -1,14 +1,13 @@
 const express = require('express')
 const mongoose = require('mongoose')
 const ShortUrl = require('./models/shortUrl')
+require('dotenv').config()
 const app = express()
-const PORT = 5000;
+const PORT = 3000;
 
-// mongoose.connect('mongodb://0.0.0.0:27017/admin', {
-//   useNewUrlParser: true, useUnifiedTopology: true
-// })
 
-const DB_URL = 'mongodb://0.0.0.0:27017/admin';
+
+const DB_URL = 'mongodb+srv://sanofer:guvi1234@cluster0.htinaip.mongodb.net/?retryWrites=true&w=majori';
 mongoose
   .connect(DB_URL, {})
   .then(() => console.log("Connected to MongoDB"))
