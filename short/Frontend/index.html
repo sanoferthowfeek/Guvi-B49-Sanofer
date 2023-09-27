@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <!-- Login form begin -->
+        <div class="row w-sm-50 " id="loginDiv">
+            <div class="box">
+                <form onsubmit="login();return false;" id="loginForm" method="POST">
+                    <h1>Login</h1>
+                    <p class="text-muted"> Please enter your login and password!</p>
+                    <input type="text" id="loginName" name="email" placeholder="Email" autocomplete="off" required>
+                    <input type="password" name="password" id="loginPassword" placeholder="Password" autocomplete="off" required>
+                    <input type="submit" name="submit" id="loginSubmit" value="Login">
+                    <div>
+                        <!-- <input type="button" name="signup" id="signup" value="SignUp" href="#"> -->
+                        <label class="text-muted">Don't have an account ? <a href="#"  onclick="signup()">Sign Up</a> </label>
+                    </div>
+                    <div style="color: gainsboro;">
+                        <small>Demo Credentials:</small>
+                        <small><strong> username:</strong> admin@gmail.com</small>
+                        <small><strong>password:</strong> admin</small>
+                    </div>
+
+
+                </form>
+            </div>
+        </div>
+        <!-- Login Form End -->
+        <!-- Register form begin -->
+        <div class="row w-sm-50" id="registerDiv">
+            <div class="box" id="register">
+                <form onsubmit="register();return false;" id="signupForm" method="POST">
+                    <fieldset>
+                        <legend>
+                            <h2 class="text-light">SIGN UP</h2>
+                        </legend>
+                        <div class="form-group input-group">
+                            <i class="fa fa-user p-md-3"></i><input type="text" name="name" id="name" class="col-10" placeholder="username" autocomplete="off" required>
+                        </div>
+                        <div class="form-group input-group">
+                            <i class="fa fa-envelope p-md-3"></i><input type="email" name="email" autocomplete="off" id="email" class="col-10" placeholder="E-mail" required>
+                        </div>
+                        <div class="form-group input-group">
+                            <i class="fa fa-phone p-md-3"></i><input type="tel" name="phone" id="phone" autocomplete="off" class="col-10" placeholder="Phone Number" required>
+                        </div>
+                        <div class="form-group input-group">
+                            <i class="fa fa-lock p-md-3"></i> <input type="password" name="password" id="password" autocomplete="off" class="col-10" placeholder="password" required>
+                        </div>
+                        <div>
+                            <input type="submit" value="Sign Up" class="btn btn-success">
+                        </div>
+                        <label><a href="login.html">Back to Login</a> </label>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+        <!-- Register form end -->
+
+    </div>
+
+    <script src="login.js"></script>
+</body>
+
+</html>

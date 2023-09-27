@@ -1,0 +1,98 @@
+#codediv,
+#setnewpassword,
+#submitcode,
+#newpassworddiv {
+    display: none;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: linear-gradient(to bottom, #b92b27, #1565c0);
+    height: 100vh;
+}
+
+.box {
+    width: 500px;
+    padding: 40px;
+    top: 50%;
+    left: 50%;
+    background: #191919;
+    text-align: center;
+    transition: 0.25s;
+    margin-top: 100px
+}
+
+.box input[type="text"],
+.box input[type="password"],
+.box input[type="tel"],
+.box input[type="email"] {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 5px auto;
+    text-align: center;
+    border: 2px solid #3498db;
+    padding: 10px 10px;
+    width: 250px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s
+}
+
+.box h1 {
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500
+}
+
+.box input[type="text"]:hover,
+.box input[type="password"]:hover,
+.box input[type="tel"]:hover,
+.box input[type="email"]:hover {
+    width: 300px;
+    border-color: #2ecc71;
+    /* box-shadow: 0px 2px 4px 0px gainsboro; */
+}
+
+.box input[type="submit"],
+.box input[type="button"] {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #2ecc71;
+    padding: 14px 40px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer
+}
+
+.box input[type="submit"]:hover {
+    background: #2ecc71
+}
+
+#loginDiv,
+#registerDiv {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    width: 40%;
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .box {
+        width: 300px;
+        padding: 30px;
+        background: black;
+        text-align: center;
+        transition: 0.25s;
+        margin-top: 100px;
+    }
+}
