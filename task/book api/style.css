@@ -1,0 +1,141 @@
+.title{
+    text-align: center;
+    padding-bottom: 15px;
+    padding-top: 20px;
+    margin-bottom: 0px;
+}
+
+.numhead{
+    text-align: center;
+    padding-bottom: 15px;
+    padding-top: 20px;
+    margin-bottom: 0px;
+}
+
+.headingpara{
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom:40px;
+}
+
+.inputout{
+    display: flex;
+    justify-content: center;
+}
+
+.input{
+    display: flex;
+    justify-content: center;
+    background-color:rgb(228, 227, 227);
+    gap:10px;
+    margin-left: 107px;
+    margin-right: 107px;
+    border-radius: 10px;;
+    width:250px;
+    opacity: 0.9;
+}
+
+#inputdata{
+    width:150px;
+    background-color: transparent;
+    border-radius: 10px;
+    border-style: none;
+    border:none;
+    text-align: center; 
+}
+
+input::placeholder{
+    color:rgb(44, 37, 37);
+}
+
+#button{
+    background-color:transparent;
+    border-radius: 10px;
+    border:none;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+#button:active{
+    color: rgb(17, 16, 16);
+}
+
+.contentdiv{
+    font-size: 18px;  
+}
+
+.tamildiv{
+    background-color: transparent;
+    color:black;
+    margin: 20px;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.middlediv{
+    background-color: transparent;
+    color:black;
+    padding:30px;
+    margin:20px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.englishdiv{
+    background-color: transparent;
+    color:black;
+    padding:30px;
+    margin:20px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+@media(min-width:680px){
+    .tamildiv{
+        display: flex;
+        justify-content: space-between;
+    }
+    .englishdiv{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+@media(min-width:1080px){
+.contentdiv{
+    display: flex;
+    justify-content: space-between;
+}
+.tamildiv{
+    display: flex;
+    flex-direction: column;
+}
+.englishdiv{
+    display: flex;
+    flex-direction: column;  
+}
+.headingpara{
+    margin-top: 61px;
+    margin-bottom: 61px;
+}}
+
+@media(min-width:1400px){
+.headingsection{
+    margin:30px 100px;
+}
+.contentdiv{
+    display: flex;
+    justify-content: space-around;
+}
+.headingpara{
+    padding-left: 200px;
+    padding-right: 200px;
+}
+.numhead{
+    padding-bottom: 40px;
+    padding-top: 40px;
+}}

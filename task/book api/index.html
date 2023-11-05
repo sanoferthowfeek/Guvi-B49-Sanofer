@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="title" > திருக்குறள் </h1>
+    <div class="inputout"> 
+        <div class="input">  
+            <input id="inputdata"type="number" required min="1" max="1330" placeholder="Enter Number">
+            <button id="button" type="button" > Get </button>
+        </div>
+    </div>           
+    <h2 class="numhead" > குறள் எண் - KURAL NUMBER : <span id="number"> </span></h2>
+    
+    <div class=" contentdiv">
+        <div class="tamildiv">
+            <div>
+                <h3>Section</h3>
+                <p id="sect_tam"></p>
+            </div>
+            <div>
+                <h3>Chapter Group</h3>
+                <p id="chapgrp_tam"></p>
+            </div>
+            <div>
+                <h3>Chapter</h3>
+                <p id="chap_tam"></p>
+            </div>        
+        </div>
+
+        <div class="middlediv">
+            <h3>குறள்</h3>
+            <p id="line1"></p>
+            <p id="line2"></p><br>
+            <h3>திருக்குறள் விளக்கம்</h3>
+            <p id="tam_exp"></p>
+            <h3>THIRUKKURAL in English</h3>
+            <p id="eng"></p>
+            <h3>Explanation in English</h3>
+            <p id="eng_exp"></p>
+        </div>
+
+        <div class="englishdiv" >
+            <div>
+                <h3>Section</h3>
+                <p id="sect_eng"></p>
+            </div>
+            <div>
+                <h3>Chapter Group</h3>
+                <p id="chapgrp_eng"></p>
+            </div>
+            <div>
+                <h3>Chapter</h3>
+                <p id="chap_eng"></p>
+            </div>
+        </div>
+    </div>
+
+   <script src="./script.js"></script> 
+</body>
+</html>
