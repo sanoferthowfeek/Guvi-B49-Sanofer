@@ -1,0 +1,58 @@
+body{
+    background-color:palevioletred;
+    font-family: Verdana;
+    text-align: start;
+}
+#form {
+background-color: lightpink;
+max-width: 1000px;
+margin: 50px auto ;
+padding: 30px 20px;
+box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+}
+#restaurant div {
+    display: block;
+    margin-bottom: 10px;
+  }
+  #restaurant input,
+  #restaurant textarea {
+    border: 1px solid rgb(196, 196, 14);
+    border-radius: 2px;
+    font-family: inherit;
+    padding: 10px;
+    display: block;
+    width: 95%;
+  }
+  #restaurant input[type="radio"],
+  #restaurant input[type="checkbox"] {
+    display: inline-block;
+  width: auto; 
+  }
+
+button {
+padding: 8px 16px;
+background-color: #c9618f;
+color: #fff;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+}
+
+button:hover{
+  background-color: lightskyblue;
+  color: black;
+}
+
+#table {
+width: 100%;
+border-collapse: collapse;
+}
+
+th, td {
+padding: 8px;
+border-bottom: 1px solid #ece1e1;
+}
+
+th {
+background-color: #ece2e2;
+}

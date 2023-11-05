@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+     <div id="container" >
+        <h1 id="title" >FORM</h1>
+        <p id="description">Fill the form as your wish</p>
+        <form id="form" >
+        <div id="restaurant">
+        <div >First Name :
+        <input type="text"    id="first-name" placeholder="Enter your First Name "    >
+        </div>               
+        <div id="last-name">Last Name :
+        <input type="text"   id="last-input" placeholder="Enter your Last Name "  >
+        </div>
+        <div id="address">
+        <label for="input-address">Address :</label>
+        <textarea  id="address-text"   placeholder="Enter your Address"></textarea  >
+        </div>
+        <div id="pincode">
+        <label for="pincode">Pincode :</label>
+        <input type="number" id="input-pincode" placeholder="Enter your Pincode"   >
+        </div>
+        <div id="gender">
+        <label>Gender :</label required>
+        <input  id="input-male" type="radio" name="gender" value="Male" required  > <label for="input-male">Male</label> 
+        <input id="input-female" type="radio" name="gender" value="Female"  required >  <label for="input-female" >Female</label> 
+        </div>
+        <br>
+        <div id="foods"> 
+        </div>
+        <div id="state">
+        <label for="input-state" >State :</label>
+        <input type="text" id="input-state" placeholder="Enter your State"  >
+        </div>
+        <div id="counthy">
+        <label for ="input-country">Country :</label>
+        <input type="text" id="input-country" placeholder="Enter your Counthy"   >
+        </div>
+        <button type="submit" id="submit" >Submit</button>
+        <button type="reset" id="reset" >Reset</button>
+    </div>
+    </form>
+    <br>
+    <table id="table" width="100%" >
+        <thead>
+            <th id="table-First">First Name</th>
+            <th>Last Name</th>
+            <th>Address </th>
+            <th>Pincode</th>
+            <th>Gender</th>
+            <th>Food Items</th>
+            <th>State </th>
+            <th>Country</th>
+        </thead>
+        <tbody id="table-body">
+        </tbody>
+    </table>
+    </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

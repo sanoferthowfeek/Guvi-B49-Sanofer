@@ -9,7 +9,7 @@
 <body>
     <h1> Restaurant Form</h1>
     <form id="form">
-        <div class="restaurant">
+        <div id="restaurant">
             <label for="firstname">First Name:</label>
             <input id="firstname" type="text" placeholder="Enter here..." />
             <br/>
@@ -27,9 +27,9 @@
             <br/>
             <br/>
             <label for="gender">Gender:</label>
-            <input id="gender" type="radio" name="gender" /><label>Male</label>
-            <input id="gender" type="radio" name="gender" /><label>Female</label>
-            <input id="gender" type="radio" name="gender" /><label>Others</label>
+            <input id="input-male" type="radio" name="gender" /><label>Male</label>
+            <input id="input-female" type="radio" name="gender" /><label>Female</label>
+            <input id="input-others" type="radio" name="gender" /><label>Others</label>
             <br/>
             <br/>
             <label for="address">Address:</label>
@@ -67,9 +67,9 @@
             <br/>
             
                 <table id="datatable">
-                    <thead>
+                    <thead >
                     <tr>
-                        <th>First Name</th>
+                        <th id="table-First">First Name</th>
                         <th>Last Name</th>
                         <th>Address</th>
                         <th>Pincode</th>
@@ -79,14 +79,17 @@
                         <th>country</th>
                     </tr>
                 </thead>
+                <tbody id="table-body">
+             
+                </tbody>
                 </table>
             
             <br/>
             <br/>
-            <button type="submit">Submit</button>
+            <button type="submit" id="submit">Submit</button>
             <br/>
             <br/>
-            <button  type="clear">Clear</button>
+            <button  type="clear" id="clear">Clear</button>
         </div>
     </form>
     <script src="index.js"></script>
