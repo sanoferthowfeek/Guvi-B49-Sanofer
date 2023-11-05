@@ -1,0 +1,72 @@
+
+*{
+    text-align: center;
+    background-color: black;
+    color: whitesmoke;
+  }
+
+  #clear {
+    background-color: yellow;
+  }
+
+  #equal{
+    background-color: orange;
+  }
+  
+  #container{
+      height: 100vh;
+      width: 50vw;
+      margin: auto;
+      border: 1px solid green;
+      box-shadow: 2px  2px 20px white;
+      display: flex;
+      flex-direction: column;
+  }
+  
+  #result{
+    background-color:whitesmoke;
+    color: black;
+    font-size: 50px;
+    height: 100%;
+    width: 99%;
+    text-align: end;
+  }
+
+  #contant-box{
+     flex-basis: 1%;
+     border-radius: 30px;
+  }
+
+  #result-box{
+    flex-basis: 19%;
+    border-radius: 30px;
+  }
+
+  #button-box{
+    flex-basis: 80%; 
+  }
+
+  #numbers{
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(4,2fr);
+    gap: 0.5rem;
+    border-radius: 30px;
+    border-color:grey;
+  }
+
+  button{
+    background-color: white;
+    color: black;
+    font-size: x-large;
+  }
+
+  button:hover {
+    background-color:lightgreen;
+  }
+  
+  @media only screen and (max-width: 500px) {
+    button {
+      font-size:medium ;
+    }
+  }
