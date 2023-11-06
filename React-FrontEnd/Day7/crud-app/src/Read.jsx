@@ -7,7 +7,7 @@ function Read() {
   const {id} = useParams();
 
   useEffect(() => {
-      axios.get('http://localhost:4000/users/'+id)
+      axios.get('https://cruds-im3h.onrender.com/users/'+id)
       .then(res => 
         setData(res.data))
         .catch(err =>console.log(err) );

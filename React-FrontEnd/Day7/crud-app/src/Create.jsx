@@ -13,7 +13,7 @@ function Create() {
     const navigate = useNavigate();
     const handlesubmit = (event) =>{
         event.preventDefault();
-        axios.post('http://localhost:4000/users',values)
+        axios.post('https://cruds-im3h.onrender.com/users',values)
         .then(res =>{
             console.log(res);
             navigate('/')
