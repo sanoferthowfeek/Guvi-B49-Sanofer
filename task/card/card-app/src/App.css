@@ -4,7 +4,15 @@
   margin: 0;
   padding: 0;
 }
-
+.card {
+  letter-spacing: 0.1rem;
+  margin: 2rem;
+  border-radius: 2rem;
+  padding: 1rem 2rem 2rem 2rem;
+  background-color: whitesmoke;
+  opacity: 0.9;
+  cursor: pointer;
+}
 body{
   background: #007bff;
   background: linear-gradient(to right, #0062E6, #33AEFF);
@@ -18,16 +26,7 @@ body{
   justify-content: center;
 }
 
-.card{
-  background-color: white;
-  border-radius: 20px;
-  /* min-width: 360px; */
-  margin:40px;
-  overflow: hidden;
-  display: flex;
-  flex-direction:column;
-  cursor: pointer;
-}
+
 
 .card_header{
   text-align: center;
@@ -91,6 +90,14 @@ list-style-type: none;
   display: flex;
   justify-content:center;
   margin-bottom: 20px;
+}
+
+.card:hover {
+  opacity: 1;
+  color: white;
+  background-color: red;
+  box-shadow: 0.5rem 0.5rem 0.5rem 0.5rem rgb(109, 103, 103);
+    ;            
 }
 
 .card_btn{
