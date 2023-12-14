@@ -1,0 +1,18 @@
+.first{
+    width: 500px;
+  height: 250px;
+  margin: 50px;
+  outline: solid 1px black;
+  display: flex;
+  justify-content: center;
+    background-color: aqua;
+}
+.circle{
+    height: 50px;
+    width: 50px;
+    background-color: brown;
+    border-radius: 50%;
+}
+button:hover{
+background-color: red;
+}
