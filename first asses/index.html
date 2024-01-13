@@ -1,0 +1,80 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>12</p>
+    <button type="submit" onclick="changeValue()">submit</button>
+    <script >
+changeValue() {
+    var a = 12;
+var b = a % 2;
+if (b==0){
+console.log('It is even');
+}
+else(b==0) {
+    console.log('It is odd');
+}
+}
+      
+    </script>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 50px;
+    }
+
+    #result {
+      font-size: 20px;
+      margin-top: 20px;
+    }
+
+    button {
+      font-size: 16px;
+      padding: 10px;
+      margin-top: 10px;
+      cursor: pointer;
+    }
+  </style>
+  <title>Even or Odd Checker</title>
+</head>
+<body>
+  <h1>Number Checker</h1>
+  <p>Click the button to check if the number is even or odd:</p>
+
+  <input type="number" id="numberInput" placeholder="Enter a number">
+  <button onclick="checkNumber()">Check</button>
+
+  <div id="result"></div>
+
+  <script>
+    function checkNumber() {
+      // Get the input value
+      var inputNumber = document.getElementById('numberInput').value;
+
+      // Check if the input is a valid number
+      if (!isNaN(inputNumber)) {
+        // Check if the number is even or odd
+        var resultMessage = (inputNumber % 2 === 0) ? 'The number is even.' : 'The number is odd.';
+
+        // Display the result
+        document.getElementById('result').innerHTML = resultMessage;
+      } else {
+        // Display an error message for invalid input
+        document.getElementById('result').innerHTML = 'Please enter a valid number.';
+      }
+    }
+  </script>
+</body>
+</html>
