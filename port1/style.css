@@ -354,7 +354,7 @@ img {
 
 /* WORK */
 
-.work {
+/* .work {
   text-align: center;
 }
 
@@ -375,7 +375,7 @@ img {
 
 .work_img img:hover {
   transform: scale(1.1);
-}
+} */
 
 /* Contact */
 
@@ -502,11 +502,11 @@ img {
     width: 450px;
   }
 
-  .work_container {
+  /* .work_container {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
     column-gap: 2rem;
-  }
+  } */
 
   .contact_form {
     width: 400px;
@@ -538,15 +538,16 @@ img {
 	width: 50%; 
 }  */
 
-.row{
-  display: flex;
+.row1{
+  display: flex; 
   justify-content: space-between;
   width: 100%;
   gap: 50px;
 }
-.col{
-  display: flex;
-  width: 50%;
+.col1{
+ display: flex;
+  width: 75%;
+  margin-left: 13%;
 }
 
 .top-header{
@@ -571,44 +572,48 @@ img {
   padding: 20px 30px;
   width: 100%;
   height: 315px;
-  background: lightblue;
+  background: rgb(47, 47, 145);
   border-radius: 10px;
   box-shadow: 1px 8px 10px 2px var(--first-shadow-color);
   overflow: hidden;
 }
+
+.contact-info:hover{
+  background: #3d96ba;
+}
 .contact-info>h2{
-  color: var(--color-white);
+  color: white;
   margin-bottom: 20px;
 }
 .contact-info>p{
   display: flex;
   align-items: center;
   gap: 10px;
-  color: var(--color-white);
+  color: white;
   margin-block: 5px;
 }
 .contact-info p>i{
   font-size: 18px;
 }
 .contact-info::after{
-  background: var(--color-white);
+  background:  var(--color-white);
 }
 .contact-info:hover.contact-info h2,
 .contact-info:hover.contact-info p,
 .contact-info:hover.contact-info i{
-  color: #777;
+  color: black;
   z-index: 2;
 }
 
 
 @media only screen and (max-width: 900px){
-  .row{
+  .row1{
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 50px;
 }
-.col{
+.col1{
     display: flex;
     justify-content: center;
     width: 100%;
@@ -617,16 +622,20 @@ img {
 
 .education {
   margin-bottom: 20px;
+  padding-left: 20%;
+  
 }
 
 .education h2 {
   color: #333;
   font-size: 24px;
   margin-bottom: 10px;
+  
 }
 
 .education-item {
   margin-bottom: 20px;
+ 
 }
 
 .education-item h3 {
@@ -691,11 +700,11 @@ img {
 
 
 /* General Styles */
-body {
+/* body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-}
+} */
 
 .certificate-section {
   padding: 20px;
