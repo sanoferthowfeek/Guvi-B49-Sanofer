@@ -1,5 +1,5 @@
 import React from 'react';
-// import './Word.css';
+import './Word.css';
 
 function Word({ word, guesses }) {
   return (

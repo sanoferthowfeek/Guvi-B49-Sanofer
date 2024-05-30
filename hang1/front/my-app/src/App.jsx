@@ -30,7 +30,7 @@ const App = () => {
   }, [token]);
 
   return (
-    <div className="app">
+    <div className="app1">
       <header>
         {token ? <SignOut setToken={setToken} /> : <SignIn setToken={setToken} />}
       </header>

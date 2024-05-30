@@ -1,0 +1,29 @@
+/* src/components/Keyboard.module.css */
+.keyboard {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .key {
+    margin: 5px;
+    padding: 10px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    background-color: #6c5ce7;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .key:hover {
+    background-color: #a29bfe;
+  }
+  
+  .key:disabled {
+    background-color: #dfe6e9;
+    cursor: not-allowed;
+  }
+  
