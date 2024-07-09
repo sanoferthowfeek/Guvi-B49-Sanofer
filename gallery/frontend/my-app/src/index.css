@@ -1,0 +1,78 @@
+html::-webkit-scrollbar{
+  width: 0.4rem;
+  background: transparent;
+}
+html::-webkit-scrollbar-thumb{
+  background: blue;
+}
+body{
+  background-color: black;
+  color: white;
+}
+.button{
+  color: rgb(179, 23, 23) ;
+  /* background-color: rgb(100, 44, 191); */
+  font-size: 30px;
+  height: 85px;
+  position: fixed;
+  top: 3.2em;
+  right: 1em;
+}
+.button:hover{
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: .8s ease-in-out;
+}
+.button i{
+  padding: 1em .5em !important;
+}
+.button span{
+  border-radius: .4em !important;
+}
+.grid{
+  margin-top: 3em;
+  margin-bottom:10em ;
+  text-align:left;
+  color: rgb(13,202,240);
+  
+}
+.card img{
+  object-fit: cover;
+  object-position: center;
+ 
+}
+.card{
+  height: 100%;
+  width: 80%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card:hover{
+  transform: scale(1.1);
+  transition: 1s ease-in-out;
+}
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: rgb(13,202,240);
+  font-size: xx-large;
+  
+}
+.card-body i{
+  padding: .5em;
+  font-size: 15px;
+}
+footer{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-top: 5em;
+  background-color: rgb(81, 72, 72);
+}
+
+
+
