@@ -19,7 +19,7 @@ export const Read = () => {
     const deleteBtn=async(id)=>{
         try {
             setLoading(true)
-         let data=await axios.delete(`http://localhost:4000/book/delete/${id}`)
+         let data=await axios.delete(`https://book-wboi.onrender.com/book/delete/${id}`)
          message.success("Successfully Deleted")
          setLoading(false)
          navigate('/Books')
@@ -32,7 +32,7 @@ export const Read = () => {
 
     useEffect(()=>{
         setLoading(true)
-        axios.get(`http://localhost:4000/book/getSingle-book/${id}`).then((res)=>{
+        axios.get(`https://book-wboi.onrender.com/book/getSingle-book/${id}`).then((res)=>{
             // console.log("res",res.data.books);
             setBooks(res.data.books)
             setLoading(false) 
@@ -50,7 +50,7 @@ export const Read = () => {
                 <div className="container-fluid my-5">
                     <div className="row">
                         <div className="borders-read col-10 col-sm-10 col-md-10 col-lg-6 col-xl-5 mx-auto my-2 read-head">
-                        <img src={`http://localhost:4000/uploads/${Books.BookImg_Url}`} height='200' width='400' alt={Books.BookTitle} className="img-fluid my-4 rounded" />
+                        <img src={`https://book-wboi.onrender.com/uploads/${Books.BookImg_Url}`} height='200' width='400' alt={Books.BookTitle} className="img-fluid my-4 rounded" />
                        <div className="btns">
                        <div className='edit-btn'>
                             <Link to={`/Edit/${Books._id}`}>

@@ -14,7 +14,7 @@ function Update() {
 })
 
   useEffect(() => {
-      axios.get('http://localhost:4000/users/'+id)
+      axios.get('https://book-wboi.onrender.com/users/'+id)
       .then(res => 
         setValues(res.data))
         .catch(err =>console.log(err) );
@@ -22,7 +22,7 @@ function Update() {
 
     const handleUpdate =  (event) =>{
       event.preventDefault();
-      axios.put('http://localhost:4000/users/'+id,values)
+      axios.put('https://book-wboi.onrender.com/users/'+id,values)
         .then(res =>{
             console.log(res);
             navigate('/')

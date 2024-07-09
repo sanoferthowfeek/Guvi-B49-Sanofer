@@ -39,7 +39,7 @@ const Edit = () => {
         //     BookTitle, BookAuthor, BookImg_Url,BookIntro, BookDesc, BookPublishYear
         // }
 
-       let res=await axios.put(`http://localhost:4000/book/update/${id}`,  formData, {
+       let res=await axios.put(`https://book-wboi.onrender.com/book/update/${id}`,  formData, {
         headers: {
           'Content-Type': 'multipart/form-data'
         }
@@ -60,7 +60,7 @@ const Edit = () => {
 
     const getData=async()=>{
         setLoading(true)
-        axios.get(`http://localhost:4000/book/getSingle-book/${id}`).then((res)=>{
+        axios.get(`https://book-wboi.onrender.com/book/getSingle-book/${id}`).then((res)=>{
             // console.log("res.data",res.data.books.BookImg_Url);
             setBookTitle(res.data.books.BookTitle)
             setBookAuthor(res.data.books.BookAuthor)

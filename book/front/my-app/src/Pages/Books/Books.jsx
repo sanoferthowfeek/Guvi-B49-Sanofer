@@ -11,7 +11,7 @@ const Books = () => {
   useEffect(() => {
     setLoading(true);
     axios
-      .get("http://localhost:4000/book/get-book")
+      .get("https://book-wboi.onrender.com/book/get-book")
       .then((res) => {
         // console.log(res.data.books);
         setBooks(res.data.books);
@@ -43,7 +43,7 @@ const Books = () => {
               >
                 <div className="card bg-light" style={{ width: "18rem" }}>
                   <img
-                    src={`http://localhost:4000/uploads/${e.BookImg_Url}`}
+                    src={`https://book-wboi.onrender.com/uploads/${e.BookImg_Url}`}
                     height='250'
                     width='100'
                     alt={e.BookTitle}
