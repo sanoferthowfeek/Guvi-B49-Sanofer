@@ -12,7 +12,7 @@ const Button = () => {
     const formData=new FormData();
     formData.append('photo', e.target.files[0])
 
-    let res=await axios.post('https://photo-gallery-1.onrender.com/save', formData)
+    let res=await axios.post('https://photos-fb7u.onrender.com/save', formData)
     // console.log(res.data);
     message.success(res.data.message)
     window.location.reload()

@@ -7,7 +7,7 @@ const Grid = ({photos}) => {
 
   const handleDelete=async(id)=>{
     try {
-      let res=await axios.delete(`https://photo-gallery-1.onrender.com/remove/${id}`)
+      let res=await axios.delete(`https://photos-fb7u.onrender.com/remove/${id}`)
       console.log(res.data)
       message.success(res.data.message)
       window.location.reload()
@@ -28,7 +28,7 @@ const Grid = ({photos}) => {
                 photos.map((e, i)=>(
                     <div className="col-10 col-sm-10 col-md-6 col-lg-4 col-xl-3 mx-auto my-5" key={i}>
                     <div className="card">
-                    <img src={`https://photo-gallery-1.onrender.com/uploads/${e.photo}`} className="card-img-top" height='300' width={250} alt="Image"/>
+                    <img src={`https://photos-fb7u.onrender.com/uploads/${e.photo}`} className="card-img-top" height='300' width={250} alt="Image"/>
                     <div className="card-body">
                       <button className='btn btn-primary' onClick={()=>handleDelete(e._id)}><i className="fa-solid fa-trash"></i>DELETE</button>
                     </div>
