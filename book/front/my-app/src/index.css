@@ -1,0 +1,510 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Bungee+Spice&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Raleway:400");
+@import url("https://fonts.googleapis.com/css?family=Raleway:400");
+
+* {
+	box-sizing: border-box;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+/* border */
+
+
+/*  */
+:root{
+    /* Colors */
+    --main: #00f7ff;
+
+    /* For BoxShadows */
+    --boxShadow: 10px 10px 10px -10px rgba(35,42,4,0.83), insert 10px 10px 10px -10px rgba(55,67,2,0.6);
+
+    /* boxShadowHover */
+    --boxShadowHover: 30px 30px 30px -30px rgba(100,103,16,0.8),
+    insert 40px 40px 40px rgba(69,97,10,0.9)
+
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Bree Serif", serif;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    transition: 0.2s ease-in-out ;
+}
+
+*::selection{
+    background-color: var(--main);
+    color: black ;
+}
+body{
+  background: black;
+  color: white;
+}
+.spinner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height:100vh ;
+  }
+
+/* for scrollbar */
+::-webkit-scrollbar{
+    width: 5px;
+    background: transparent;
+}
+::-webkit-scrollbar-thumb{
+    background: blueviolet;
+}
+
+/* NAVBAR */
+.navbar-nav .nav-link .nav-item{
+  position:  relative !important;
+}
+.navbar{
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  box-shadow: 2px 2px 24px blueviolet;
+}
+.nav-item::after{
+  content: '' ;
+  position: absolute ;
+  bottom: -12px;
+  left: 0 ;
+  width: 0% ;
+  height: 4px ;
+  border-radius: 1em;
+  transition: .5s ease-in-out ;
+  background-color:white;
+}
+.nav-link:hover .nav-item::after{
+  width: 100% !important;
+}
+
+/* HOME */
+
+
+@property --angle {
+  syntax: '<angle>';
+  initial-value: 90deg;
+  inherits: true;
+}
+
+@property --gradX {
+  syntax: '<percentage>';
+  initial-value: 50%;
+  inherits: true;
+}
+
+@property --gradY {
+  syntax: '<percentage>';
+  initial-value: 0%;
+  inherits: true;
+}
+
+
+
+p {
+	margin: 0;
+}
+
+:root {
+	--d: 2500ms;
+	--angle: 90deg;
+	--gradX: 100%;
+	--gradY: 50%;
+	--c1: rgba(168, 239, 255, 1);
+	--c2: rgba(168, 239, 255, 0.1);
+}
+
+.wrapper {
+	min-width: min(40rem, 100%);
+}
+
+.box {
+	font-size: 3vw;
+	margin: max(1rem, 3vw);
+	border: 0.35rem solid;
+  background-color: blueviolet;
+	padding: 3vw;
+	border-image: conic-gradient(from var(--angle), var(--c2), var(--c1) 0.1turn, var(--c1) 0.15turn, var(--c2) 0.25turn) 30;
+	animation: borderRotate var(--d) linear infinite forwards;
+}
+
+.box:nth-child(2) {
+	border-image: radial-gradient(ellipse at var(--gradX) var(--gradY), var(--c1), var(--c1) 10%, var(--c2) 40%) 30;
+	animation: borderRadial var(--d) linear infinite forwards;
+}
+
+@keyframes borderRotate {
+	100% {
+		--angle: 420deg;
+	}
+}
+
+@keyframes borderRadial {
+	20% {
+		--gradX: 100%;
+		--gradY: 50%;
+	}
+	40% {
+		--gradX: 100%;
+		--gradY: 100%;
+	}
+	60% {
+		--gradX: 50%;
+		--gradY: 100%;
+	}
+	80% {
+		--gradX: 0%;
+		--gradY: 50%;
+	}
+	100% {
+		--gradX: 50%;
+		--gradY: 0%;
+	}
+}
+.home-btn{
+  text-decoration: none;
+  background-color:  blueviolet;
+  color: white;
+  padding: .8em;
+  border-radius: 1em;
+  margin-top: .8em;
+}
+.home-img img:hover{
+  transform: scale(1.1);
+  transition: .8s ease-out;
+  box-shadow: 4px 4px 14px blueviolet, -4px -4px 14px blueviolet;
+}
+.home-img{
+  cursor: pointer;
+}
+
+/* about */
+
+
+@property --angle {
+  syntax: '<angle>';
+  initial-value: 90deg;
+  inherits: true;
+}
+
+@property --gradX {
+  syntax: '<percentage>';
+  initial-value: 50%;
+  inherits: true;
+}
+
+@property --gradY {
+  syntax: '<percentage>';
+  initial-value: 0%;
+  inherits: true;
+}
+
+
+
+p {
+	margin: 0;
+}
+
+:root {
+	--d: 2500ms;
+	--angle: 90deg;
+	--gradX: 100%;
+	--gradY: 50%;
+	--c1: rgba(168, 239, 255, 1);
+	--c2: rgba(168, 239, 255, 0.1);
+}
+
+.wrapper {
+	min-width: min(40rem, 100%);
+}
+
+.box-abt{
+	font-size: 20px;
+	margin: max(1rem, 3vw);
+	border: 0.35rem solid;
+  width: 100%;
+  background-color: blueviolet;
+	padding: 1em;
+	border-image: conic-gradient(from var(--angle), var(--c2), var(--c1) 0.1turn, var(--c1) 0.15turn, var(--c2) 0.25turn) 30;
+	animation: borderRotate var(--d) linear infinite forwards;
+}
+.box-book {
+	font-size: 20px;
+	margin: max(1rem, 3vw);
+	border: 0.35rem solid;
+  width: 70%;
+  background-color: blueviolet;
+	padding: 1em;
+	border-image: conic-gradient(from var(--angle), var(--c2), var(--c1) 0.1turn, var(--c1) 0.15turn, var(--c2) 0.25turn) 30;
+	animation: borderRotate var(--d) linear infinite forwards;
+}
+
+.box:nth-child(2) {
+	border-image: radial-gradient(ellipse at var(--gradX) var(--gradY), var(--c1), var(--c1) 10%, var(--c2) 40%) 30;
+	animation: borderRadial var(--d) linear infinite forwards;
+}
+
+@keyframes borderRotate {
+	100% {
+		--angle: 420deg;
+	}
+}
+
+@keyframes borderRadial {
+	20% {
+		--gradX: 100%;
+		--gradY: 50%;
+	}
+	40% {
+		--gradX: 100%;
+		--gradY: 100%;
+	}
+	60% {
+		--gradX: 50%;
+		--gradY: 100%;
+	}
+	80% {
+		--gradX: 0%;
+		--gradY: 50%;
+	}
+	100% {
+		--gradX: 50%;
+		--gradY: 0%;
+	}
+}
+
+/* Add new */
+.add-new .n-book{
+  text-decoration: none;
+  color: white;
+  overflow: hidden;
+  transition: all 0.3s;
+  line-height: 1.4em;
+  border: 1px solid blueviolet;
+  font-size: large !important;
+  padding: .3em;
+  border-radius: .5em;
+}
+.add-new{
+  text-align: right !important;
+}
+
+/* Read */
+.read-body span{
+  color: blueviolet;
+}
+.read-body, .read-head{
+  border:  1px solid blueviolet;
+  padding: 2em;
+  border-radius: .5em;
+  text-align: center;
+  cursor: pointer;
+}
+.read-head:hover{
+  box-shadow: 4px 4px 14px blueviolet, -4px -4px 14px blueviolet;
+}
+.read-head button:hover{
+  box-shadow: 4px 4px 14px blueviolet, -4px -4px 14px blueviolet;
+}
+.read-body:hover{
+  box-shadow: 4px 4px 14px blueviolet, -4px -4px 14px blueviolet;
+}
+.read-head .edit-btn:hover{
+  box-shadow: 4px 4px 14px blueviolet, -4px -4px 14px blueviolet;
+}
+.edit-btn , .delete-btn {
+  font-size: 1.2em;
+  text-decoration: none;
+  color: rgb(216, 49, 19);
+  border: 1px solid blueviolet;
+  padding: .7em .8em;
+  border-radius: .2em;
+  text-decoration: none;
+  background-color: #00f7ff;
+}
+.delete-btn {
+  padding: .7em 1em;
+}
+button{
+  background-color: skyblue;
+}
+.btns{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+  gap: 1em;
+  margin-top: 1.5em;
+}
+
+/* Add page */
+.borders {
+  width: 90%;
+  height: 100%;
+  padding: 2em 5em 1em 5em;
+  place-content: center;
+  color: white;
+  text-shadow: 0 1px 0 #000;
+  
+  --border-angle: 0turn; 
+  --main-bg: conic-gradient(
+      from var(--border-angle),
+      #213,
+      #112 5%,
+      #112 60%,
+      #213 95%
+    );
+
+  border: solid 5px transparent;
+  border-radius: 2em;
+  --gradient-border: conic-gradient(from var(--border-angle), transparent 25%, #08f, #f03 99%, transparent);
+
+  background: 
+    var(--main-bg) padding-box,
+    var(--gradient-border) border-box, 
+    var(--main-bg) border-box;
+
+  background-position: center center;
+
+  animation: bg-spin 3s linear infinite;
+}
+
+@keyframes bg-spin {
+  to {
+    --border-angle: 1turn;
+  }
+}
+
+.borders:hover {
+  animation-play-state: paused;
+}
+
+@property --border-angle {
+  syntax: "<angle>";
+  inherits: true;
+  initial-value: 0turn;
+}
+
+.add-book h1{
+  text-align: center;
+  color: blueviolet;
+}
+.add-book textarea{
+  background-color: black !important;
+  color: white;
+}
+.add-book input[type=text], .add-book input[type=number], .add-book input[type=file]{
+  background-color: black !important;
+  color: white;
+  padding: 1.2em;
+}
+
+.add-book .button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+  color: #00f7ff;
+}
+@media (max-width:500px){
+  .add-book .button button{
+    font-size: small !important;
+  }
+}
+.add-book .button button{
+  padding: 1em 0;
+  /* margin-bottom: 1em; */
+}
+.form-control::placeholder { 
+  color: darkgray;
+}
+
+/* Books */
+.borders-book {
+  width: max-content;
+  height: 100%;
+  padding: 2em;
+  place-content: center;
+  color: white;
+  text-shadow: 0 1px 0 #000;
+  
+  --border-angle: 0turn; 
+  --main-bg: conic-gradient(
+      from var(--border-angle),
+      #213,
+      #112 5%,
+      #112 60%,
+      #213 95%
+    );
+
+  border: solid 5px transparent;
+  border-radius: 2em;
+  --gradient-border: conic-gradient(from var(--border-angle), transparent 25%, #08f, #f03 99%, transparent);
+
+  background: 
+    var(--main-bg) padding-box,
+    var(--gradient-border) border-box, 
+    var(--main-bg) border-box;
+
+  background-position: center center;
+
+  animation: bg-spin 3s linear infinite;
+}
+
+.borders-read {
+  padding: 2em;
+  place-content: center;
+  color: white;
+  text-shadow: 0 1px 0 #000;
+  
+  --border-angle: 0turn; 
+  --main-bg: conic-gradient(
+      from var(--border-angle),
+      #213,
+      #112 5%,
+      #112 60%,
+      #213 95%
+    );
+
+  border: solid 5px transparent;
+  border-radius: 2em;
+  --gradient-border: conic-gradient(from var(--border-angle), transparent 25%, #08f, #f03 99%, transparent);
+
+  background: 
+    var(--main-bg) padding-box,
+    var(--gradient-border) border-box, 
+    var(--main-bg) border-box;
+
+  background-position: center center;
+
+  animation: bg-spin 3s linear infinite;
+}
+@keyframes bg-spin {
+  to {
+    --border-angle: 1turn;
+  }
+}
+
+.borders:hover {
+  animation-play-state: paused;
+}
+
+@property --border-angle {
+  syntax: "<angle>";
+  inherits: true;
+  initial-value: 0turn;
+}
+/* Footer */
+.footer footer{
+  padding-top: 2em;
+}
