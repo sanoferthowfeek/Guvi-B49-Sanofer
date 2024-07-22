@@ -23,7 +23,7 @@
     const vehiclePath = L.polyline([], {color: 'red'}).addTo(map);
   
     function updateVehicleLocation() {
-      fetch('http://localhost:3000/api/vehicle-location')
+      fetch('https://leaf-qn32.onrender.com/vehicle-location')
         .then(response => response.json())
         .then(data => {
           const path = data.map(point => [point.latitude, point.longitude]);
