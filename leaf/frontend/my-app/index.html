@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Vehicle Tracker</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+</head>
+<body>
+  <div id="map" style="height: 100vh;"></div>
+  <script>
+    const map = L.map('map').setView([17.385044, 78.486671], 15);
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', ).addTo(map);
+  
+    const vehicleIcon = L.icon({
+      iconUrl: 'path/to/vehicle-icon.png',
+      iconSize: [38, 95],
+      iconAnchor: [22, 94],
+      popupAnchor: [-3, -76]
+    });
+  
+    const vehicleMarker = L.marker([17.385044, 78.486671], {icon: vehicleIcon}).addTo(map);
+    const vehiclePath = L.polyline([], {color: 'red'}).addTo(map);
+  
+    function updateVehicleLocation() {
+      fetch('https://leaf-qn32.onrender.com/vehicle-location')
+        .then(response => response.json())
+        .then(data => {
+          const path = data.map(point => [point.latitude, point.longitude]);
+          vehiclePath.setLatLngs(path);
+          const latestPoint = path[path.length - 1];
+          vehicleMarker.setLatLng(latestPoint);
+          map.panTo(latestPoint);
+        });
+    }
+  
+    setInterval(updateVehicleLocation, 5000); // Update every 5 seconds
+  
+    updateVehicleLocation();
+  </script>
+  
+</body>
+</html>
