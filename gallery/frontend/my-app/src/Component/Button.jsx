@@ -13,7 +13,7 @@ const Button = () => {
     formData.append('photo', e.target.files[0])
 
     let res=await axios.post('https://photos-fb7u.onrender.com/save', formData)
-    // console.log(res.data);
+    console.log(res.data);
     message.success(res.data.message)
     window.location.reload()
 
@@ -39,7 +39,6 @@ const Button = () => {
         </span>
         <input
           hidden
-          // multiple
           type="file"
           name="file_picker"
           id="file_picker"

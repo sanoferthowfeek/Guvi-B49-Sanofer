@@ -11,7 +11,7 @@ dotenv.config()
 const app = express()
 app.use(express.json())
 app.use(cors()) 
-app.use(express.static('public')) // now Public is being hosted by express statically
+app.use(express.static('public')) 
 
 const PORT= 3000;
 
