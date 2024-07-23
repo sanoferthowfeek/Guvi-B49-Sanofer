@@ -4,7 +4,7 @@ import colors from 'colors'
 
 dotenv.config()
 
-mongoose.connect('mongodb://127.0.0.1:27017/books').then(()=>{
+mongoose.connect('mongodb+srv://hibba:hibba@cluster0.htinaip.mongodb.net/book').then(()=>{
     console.log('MongoDB is connected'.bgRed)
 }).catch((err)=> console.log(err))
 
