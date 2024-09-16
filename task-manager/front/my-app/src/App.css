@@ -1,0 +1,48 @@
+.App {
+  text-align: center;
+  max-width: 600px;
+  margin: auto;
+  background-color: lightgray;
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+form input,
+form select {
+  margin-right: 10px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.task {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px 0;
+  text-align: left;
+  position: relative;
+  background-color: #6caad1;
+}
+
+.task h3 {
+  margin: 0;
+}
+
+.task.completed {
+  background-color: #d4edda;
+}
+
+button {
+  margin-right: 10px;
+  color: green;
+  
+}
+
+button:hover {
+  background-color: #f3eef0; /* Green */
+  color: rgb(202, 18, 18);
+}
