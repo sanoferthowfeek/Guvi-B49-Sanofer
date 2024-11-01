@@ -16,7 +16,7 @@ let polyline = L.polyline([], { color: 'blue' }).addTo(map);
 
 async function updateVehiclePosition() {
     try {
-      const response = await fetch('http://localhost:3001/api/vehicle-location');
+      const response = await fetch('https://leaf-qn32.onrender.com/api/vehicle-location');
       const data = await response.json();
       
       vehicleMarker.setLatLng([data.latitude, data.longitude]);
