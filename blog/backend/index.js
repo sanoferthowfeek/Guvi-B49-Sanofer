@@ -21,7 +21,7 @@ app.use(express.json());
 
 
 mongoose
-  .connect('mongodb://127.0.0.1:27017/blogdb')
+  .connect("mongodb://localhost:27017/blogDB")
   .then(() => {
     console.log("Connected to MongoDB");
   })
