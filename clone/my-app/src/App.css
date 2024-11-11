@@ -1,0 +1,325 @@
+/* Base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.app {
+  font-family: Arial, sans-serif;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  min-height: 100vh;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  align-items: center;
+}
+
+.navbar-logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar-menu {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2rem;
+}
+
+.header-content {
+  max-width: 600px;
+}
+.navbar-logo1{
+  
+  margin-left: 20px;  /* Adds space to the left of the logo */
+  margin-right: 20px;
+  
+}
+
+
+
+h1 {
+  font-size: 2rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+.highlight {
+  color: #a09cf9;
+}
+
+p {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.demo-button,
+.build-button {
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 20px;
+  color: white;
+}
+
+.demo-button {
+  background-color: #5e5df0;
+}
+
+.build-button {
+  background: none;
+  color: #a09cf9;
+}
+
+.footer-text {
+  font-size: 0.9rem;
+  color: #a09cf9;
+  margin-top: 2rem;
+}
+
+/* Large screens */
+@media (min-width: 1024px) {
+  .navbar {
+    padding: 1.5rem 3rem;
+  }
+
+  .navbar-logo {
+    font-size: 2rem;
+  }
+
+  .navbar-menu {
+    font-size: 1.75rem;
+  }
+
+  .header {
+    padding: 4rem;
+  }
+
+  .header-content {
+    max-width: 800px;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  p {
+    font-size: 1.25rem;
+  }
+
+  .demo-button,
+  .build-button {
+    padding: 1rem 2rem;
+    font-size: 1.25rem;
+  }
+
+  .footer-text {
+    font-size: 1rem;
+  }
+}
+
+/* Laptops */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .navbar {
+    padding: 1.2rem 2.5rem;
+  }
+
+  .navbar-logo {
+    font-size: 1.75rem;
+  }
+
+  .navbar-menu {
+    font-size: 1.5rem;
+  }
+
+  .header {
+    padding: 3rem;
+  }
+
+  .header-content {
+    max-width: 900px; 
+    width: 90%; 
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  p {
+    font-size: 1.1rem;
+  }
+
+  .demo-button,
+  .build-button {
+    padding: 0.9rem 1.8rem;
+    font-size: 1.1rem;
+  }
+
+  .footer-text {
+    font-size: 0.95rem;
+  }
+}
+
+/* Reset default styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.app {
+  font-family: Arial, sans-serif;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  min-height: 100vh;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+}
+
+.logos {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.logo {
+  height: 50px;
+  width: auto;
+}
+
+.content {
+  max-width: 600px;
+  margin-bottom: 2rem;
+}
+
+h1 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #a0a0a0;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  background-color: #1a1a1a;
+  border-radius: 10px;
+  padding: 1rem;
+  width: 90%;
+  max-width: 500px;
+}
+
+.card-image {
+  height: 50px;
+  width: auto;
+  margin-right: 1rem;
+}
+
+.card-content {
+  text-align: left;
+  display: flex;
+  
+}
+
+.card-title {
+  font-size: 0.9rem;
+  color: #a09cf9;
+  
+}
+
+.card-content p {
+  font-size: 0.9rem;
+  color: #ddd;
+  margin-top: 0.5rem;
+}
+
+.content2{
+  display: grid;
+}
+
+
+
+.footer {
+  background-color: #000;
+  color: #b0b0b0;
+  padding: 2rem;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.footer-columns {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  margin-bottom: 2rem;
+}
+
+.footer-column h3 {
+  font-size: 1rem;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column li {
+  margin: 0.5rem 0;
+  font-size: 0.9rem;
+}
+
+.footer-social {
+  margin-bottom: 2rem;
+}
+
+.footer-social h3 {
+  font-size: 1rem;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+.footer-bottom {
+  font-size: 0.8rem;
+  color: #b0b0b0;
+  border-top: 1px solid #333;
+  padding-top: 1rem;
+}

@@ -1,20 +1,46 @@
 const express = require("express");
 const mongoose = require("mongoose");
+require("dotenv").config();
+
 const cors = require("cors");
+// require('dotenv').config();
+
+// import mongoose from "./model/dbConnect.js";
 
 const app = express();
 const PORT = 5000;
 
+
 app.use(cors());
 app.use(express.json());
 
+
+
+
+
+
+
 mongoose
-  .connect("mongodb://localhost:27017/blogDB", {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
+  .connect(
+    "mongodb+srv://hibba:thowfeek@cluster0.htinaip.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0/blogs",
+    {
+      bufferCommands: false,
+      serverSelectionTimeoutMS: 30000,
+    }
+  )
+  .then(() => {
+    console.log("Connected to MongoDB");
   })
-  .then(() => console.log("Connected to MongoDB"))
-  .catch(console.error);
+  .catch((err) => {
+    console.error("Error connecting to MongoDB:", err.message);
+  });
+
+
+// mongoose
+//   .connect("mongodb+srv://hibba:thowfeek@cluster0.htinaip.mongodb.net/blogs")
+//   .then(() => console.log("MongoDB connected"))
+//   .catch((err) => console.log("MongoDB connection error:", err));
+
 
 const blogSchema = new mongoose.Schema({
   title: String,
