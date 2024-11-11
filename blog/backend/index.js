@@ -21,13 +21,7 @@ app.use(express.json());
 
 
 mongoose
-  .connect(
-    "mongodb+srv://hibba:thowfeek@cluster0.htinaip.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0/blogs",
-    {
-      bufferCommands: false,
-      serverSelectionTimeoutMS: 30000,
-    }
-  )
+  .connect('mongodb://localhost:27017/blogDB')
   .then(() => {
     console.log("Connected to MongoDB");
   })
@@ -36,10 +30,7 @@ mongoose
   });
 
 
-// mongoose
-//   .connect("mongodb+srv://hibba:thowfeek@cluster0.htinaip.mongodb.net/blogs")
-//   .then(() => console.log("MongoDB connected"))
-//   .catch((err) => console.log("MongoDB connection error:", err));
+
 
 
 const blogSchema = new mongoose.Schema({
