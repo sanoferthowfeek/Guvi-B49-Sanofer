@@ -1,0 +1,539 @@
+Global Styles
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', Arial, sans-serif;
+  background-color: #000;
+  color: #fff;
+  min-height: 100vh;
+}
+
+/* Main Container */
+.app {
+  text-align: center;
+  padding: 0 2rem;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  color: #aaa;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.nav {
+  display: flex;
+  gap: 1rem;
+}
+
+.nav a {
+  color: #aaa;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.login-button {
+  padding: 0.5rem 1rem;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+/* Hero Section */
+.hero {
+  margin-top: 2rem;
+  padding: 2rem;
+}
+
+.hero-title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.hero-title span {
+  color: #6a0dad; /* Emphasis color */
+}
+
+.hero-subtitle {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: 1rem auto;
+  color: #ccc;
+}
+
+.cta-button {
+  padding: 0.8rem 2rem;
+  background-color: #6a0dad;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  margin-top: 1rem;
+}
+
+/* Partner Logos */
+.partners {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.partners img {
+  width: 50px;
+  height: 50px;
+}
+
+/* Research Section */
+.research {
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.research h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.research p {
+  color: #aaa;
+  margin: 1rem 0;
+  
+}
+
+.research-cards {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.research-card {
+  background-color: #222;
+  padding: 1rem;
+  width: 200px;
+  text-align: center;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 8px;
+}
+
+/* Generative AI Architecture Section */
+.architecture {
+  margin: 2rem 0;
+}
+
+.architecture h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.architecture p {
+  color: #aaa;
+}
+
+/* Footer */
+.footer {
+  background-color: #111;
+  color: #b0b0b0;
+  padding: 2rem;
+  text-align: center;
+}
+
+.footer-columns {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  margin-bottom: 2rem;
+}
+
+.footer-column h3 {
+  font-size: 1rem;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column li {
+  margin: 0.5rem 0;
+  font-size: 0.9rem;
+}
+
+.footer-social {
+  margin-bottom: 2rem;
+}
+
+.footer-social h3 {
+  font-size: 1rem;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+.footer-bottom {
+  font-size: 0.8rem;
+  color: #b0b0b0;
+  border-top: 1px solid #333;
+  padding-top: 1rem;
+}
+
+/* Buttons */
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.demo-button {
+  padding: 0.8rem 1.5rem;
+  background-color: #5e5df0;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 20px;
+  font-size: 1rem;
+}
+
+.build-button {
+  padding: 0.8rem 1.5rem;
+  background: none;
+  color: #a09cf9;
+  border: none;
+  cursor: pointer;
+  border-radius: 20px;
+  font-size: 1rem;
+}
+
+/* Responsive Styles */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .navbar {
+    padding: 1.2rem 2.5rem;
+  }
+
+  .hero-title {
+    font-size: 2.5rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.1rem;
+  }
+
+  .cta-button,
+  .demo-button,
+  .build-button {
+    font-size: 1.1rem;
+    padding: 0.9rem 1.8rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .navbar {
+    padding: 1.5rem 3rem;
+  }
+
+  .hero-title {
+    font-size: 3rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.25rem;
+  }
+
+  .cta-button,
+  .demo-button,
+  .build-button {
+    font-size: 1.25rem;
+    padding: 1rem 2rem;
+  }
+}
+
+
+
+/* App.css */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #000;
+  color: #fff;
+}
+
+.app {
+  text-align: center;
+  padding: 2rem;
+}
+
+/* Partners Section */
+.ai-partners {
+  margin-bottom: 3rem;
+}
+
+.partners-heading {
+  color: #888;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.partners-logos {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.partner-logo {
+  background-color: #222;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.3s;
+}
+
+.partner-logo:hover {
+  background-color: #333;
+}
+
+/* Data Engine Section */
+.build-button {
+  padding: 0.5rem 1rem;
+  background-color: #5e5df0;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  font-size: 0.8rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+
+.data-engine-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fff;
+  margin: 1rem 0;
+}
+
+.data-engine-description {
+  font-size: 1rem;
+  color: #ccc;
+  margin-bottom: 2rem;
+}
+
+/* Data Cards */
+.data-cards {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  margin: 2rem 0;
+}
+
+.data-card {
+  background-color: #1a1a1a;
+  padding: 1.5rem;
+  border-radius: 10px;
+  width: 300px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  text-align: left;
+}
+
+.card-header h2 {
+  font-size: 1.2rem;
+  color: #fff;
+  margin-bottom: 0.5rem;
+}
+
+.card-header p {
+  color: #888;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.card-content {
+  color: #aaa;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.card-button {
+  padding: 0.5rem 1rem;
+  background-color: #6a0dad;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.card-button:hover {
+  background-color: #7b1bb2;
+}
+
+
+
+.rlhf-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+}
+
+.text-content {
+  flex: 1;
+  padding-right: 2rem;
+}
+
+.main-heading {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.main-description {
+  color: #aaa;
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.sub-sections {
+  margin-top: 2rem;
+}
+
+.sub-section {
+  margin-bottom: 1.5rem;
+}
+
+.sub-heading {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #888;
+  margin-bottom: 0.5rem;
+}
+
+.sub-description {
+  color: #aaa;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.image-container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rlhf-image {
+  max-width: 100%;
+  height: auto;
+}
+
+.content {
+  max-width: 600px;
+  margin-bottom: 2rem;
+}
+
+h1 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+
+
+
+
+.footer {
+  background-color: #000;
+  color: #b0b0b0;
+  padding: 2rem;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.footer-columns {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  margin-bottom: 2rem;
+}
+
+.footer-column h3 {
+  font-size: 1rem;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column li {
+  margin: 0.5rem 0;
+  font-size: 0.9rem;
+}
+
+.footer-social {
+  margin-bottom: 2rem;
+}
+
+.footer-social h3 {
+  font-size: 1rem;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+.footer-bottom {
+  font-size: 0.8rem;
+  color: #b0b0b0;
+  border-top: 1px solid #333;
+  padding-top: 1rem;
+}
+.highlight {
+  color: #a09cf9;
+}
