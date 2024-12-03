@@ -1,0 +1,31 @@
+.joke-container {
+  text-align: center;
+  padding: 30px;
+  font-family: 'Verdana', sans-serif;
+}
+
+.joke-container h1 {
+  font-size: 2rem;
+  color: #333;
+}
+
+.joke-button {
+  padding: 12px 24px;
+  font-size: 18px;
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-bottom: 25px;
+}
+
+.joke-text {
+  margin-top: 20px;
+  font-size: 20px;
+  color: #333;
+}
+
+.joke-text.loading {
+  color: #007bff;
+}

@@ -15,32 +15,32 @@ const PORT = 5000;
 app.use(cors());
 app.use(express.json());
 
-const client = new MongoClient(process.env.DB_URL);
+// const client = new MongoClient(process.env.DB_URL);
 
-async function connectToDatabase() {
-  try {
-    await client.connect();
-    console.log("Connected to MongoDB");
-
-    // Access the database
-    const db = client.db();
-    return db;
-  } catch (error) {
-    console.error("Failed to connect to MongoDB", error);
-    process.exit(1);
-  }
-}
-
-connectToDatabase();
-
-// mongoose
-//   .connect(process.env.DB_URL)
-//   .then(() => {
+// async function connectToDatabase() {
+//   try {
+//     await client.connect();
 //     console.log("Connected to MongoDB");
-//   })
-//   .catch((err) => {
-//     console.error("Error connecting to MongoDB:", err.message);
-//   });
+
+//     // Access the database
+//     const db = client.db();
+//     return db;
+//   } catch (error) {
+//     console.error("Failed to connect to MongoDB", error);
+//     process.exit(1);
+//   }
+// }
+
+// connectToDatabase();
+
+mongoose
+  .connect(process.env.DB_URL)
+  .then(() => {
+    console.log("Connected to MongoDB");
+  })
+  .catch((err) => {
+    console.error("Error connecting to MongoDB:", err.message);
+  });
 
 const blogSchema = new mongoose.Schema({
   title: String,
